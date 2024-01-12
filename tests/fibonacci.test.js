@@ -1,4 +1,4 @@
-import { fibonacciSequence } from "../src/Fibonacci";
+const { fibonacciSequence } = require('../src/Fibonacci'); 
 
 test('Secuencia de Fibonacci hasta el 1 debería ser [0]', () => {
     expect(fibonacciSequence(1)).toEqual([0]);

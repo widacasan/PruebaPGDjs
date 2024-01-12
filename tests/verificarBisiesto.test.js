@@ -1,4 +1,4 @@
-import esBisiesto from "../src/verificarBisiesto";
+import {esBisiesto} from "../src/verificarBisiesto";
 
 test("2024 es un año bisiesto", () => {
   expect(esBisiesto(2024)).toBe(true);

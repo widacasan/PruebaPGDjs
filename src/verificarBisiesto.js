@@ -8,7 +8,7 @@ const esBisiesto = (año) => {
    año % 100 === 0 ? false :
     año % 4 === 0;
 };
-module.exports = esBisiesto;
+module.exports = {esBisiesto};
 
 // Función principal para interactuar con el usuario
 
