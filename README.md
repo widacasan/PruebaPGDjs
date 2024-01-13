@@ -34,6 +34,22 @@ Este proyecto contiene la implementación de tres ejercicios en JavaScript, junt
 - **package-lock.json:** Registro preciso de las dependencias instaladas.
 - **package.json:** Archivo de configuración del proyecto.
 
+# Instrucciones de Ejecución
+
+## Clonar el Repositorio:
+
+```bash
+git clone https://github.com/widacasan/PruebaPGDjs.git
+
+cd PRUEBAPDGJS
+```
+# Instalación de Dependencias
+
+Para instalar las dependencias, ejecuta el siguiente comando:
+
+```bash
+npm install
+```
 # Ejercicio 1: Verificación de Año Bisiesto
 
 **Archivo Fuente:** `verificarBisiesto.js`
@@ -73,22 +89,7 @@ Crea una función que muestra dos listados (select) de departamentos y municipio
 ```bash
 node src/Listados.js
 ```
-# Instrucciones de Ejecución
 
-## Clonar el Repositorio:
-
-```bash
-git clone https://github.com/widacasan/PruebaPGDjs.git
-
-cd PRUEBAPDGJS
-```
-# Instalación de Dependencias
-
-Para instalar las dependencias, ejecuta el siguiente comando:
-
-```bash
-npm install
-```
 # Ejecutar Pruebas:
 
 ```bash
