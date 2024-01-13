@@ -7,7 +7,12 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-// Función para generar la sucesión de Fibonacci hasta el n-ésimo término
+/**
+ * Genera la sucesión de Fibonacci hasta el n-ésimo término.
+ *
+ * @param {number} n - El n-ésimo término hasta el cual se generará la sucesión.
+ * @returns {number[]} - Un array que representa la sucesión de Fibonacci.
+ */
 function fibonacciSequence(n) {
   // Verificar si el número es un entero mayor que cero
   if (!Number.isInteger(n) || n <= 0) {

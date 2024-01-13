@@ -1,11 +1,21 @@
- // tests/listados.test.js
+// tests/listados.test.js
 
 const { mostrarListados } = require('../src/Listados'); 
 
+/**
+ * Suite de pruebas para la función mostrarListados.
+ *
+ * @group Listados
+ */
 describe('mostrarListados', () => {
   let originalStdoutWrite;
   let originalStdinOn;
 
+  /**
+   * Configuración antes de cada prueba.
+   *
+   * @function beforeEach
+   */
   beforeEach(() => {
     // Mock para process.stdout.write
     originalStdoutWrite = process.stdout.write;
@@ -16,12 +26,21 @@ describe('mostrarListados', () => {
     process.stdin.on = jest.fn();
   });
 
+  /**
+   * Restaura los mocks después de cada prueba.
+   *
+   * @function afterEach
+   */
   afterEach(() => {
-    // Restaurar mocks después de cada prueba
     process.stdout.write = originalStdoutWrite;
     process.stdin.on = originalStdinOn;
   });
 
+  /**
+   * Prueba que verifica que mostrarListados muestra el listado de departamentos correctamente.
+   *
+   * @test {mostrarListados}
+   */
   test('Muestra listado de departamentos correctamente', () => {
     mostrarListados();
 
@@ -32,6 +51,11 @@ describe('mostrarListados', () => {
     expect(process.stdout.write).toHaveBeenCalledWith(expect.stringContaining("3. Atlántico"));
   });
 
+  /**
+   * Prueba que verifica que mostrarListados solicita al usuario seleccionar un departamento correctamente.
+   *
+   * @test {mostrarListados}
+   */
   test('Solicita al usuario seleccionar un departamento correctamente', () => {
     mostrarListados();
 
