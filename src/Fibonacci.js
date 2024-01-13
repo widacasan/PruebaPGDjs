@@ -55,7 +55,6 @@ rl.question("Por favor, ingrese un número: ", (input) => {
 
   // Cerrar la interfaz después de la interacción
   rl.close();
-  
 });
 
 // Exportar la función fibonacciSequence para su uso en otros módulos
